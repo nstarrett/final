@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOAS System Guide</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="site-header">
+      <div>
+        <p class="kicker">HVAC System Guide</p>
+        <h1>Dedicated Outdoor Air Systems (DOAS)</h1>
+        <p class="subtitle">A ventilation-first system that delivers controlled outdoor air; commonly paired with zone units.</p>
+      </div>
+    </header>
+
+    
+    <nav class="site-nav" aria-label="Site navigation">
+      <h2 class="nav-title">Explore</h2>
+      <ul>
+        <li><a  href="index.html">Home</a></li>
+        <li><a  href="rtu.html">RTU</a></li>
+        <li><a  href="fancoil.html">Fan Coil</a></li>
+        <li><a  href="vrf.html">VRF</a></li>
+        <li><a class="active" href="doas.html">DOAS</a></li>
+      </ul>
+
+      <div class="nav-note">
+        <p><strong>Quick tip</strong></p>
+        <p>Use the “Quick facts” box to get the main idea fast.</p>
+      </div>
+    </nav>
+    
+
+    <main class="content">
+      <section class="panel">
+        <h2>System image</h2>
+        <figure class="figure">
+          <img class="hero-img" src="images/doas_diagram.png" alt="Dedicated Outdoor Air System (DOAS) airflow diagram">
+          <figcaption>DOAS concept diagram showing ventilation air treatment and humidity control.</figcaption>
+        </figure>
+      </section>
+
+      
+<section class="panel grid-2">
+  <div>
+    <h2>What it is</h2>
+    <p>
+      DOAS (Dedicated Outdoor Air System) is focused on one job: <strong>ventilation</strong>.
+      It brings in outdoor air, filters it, and usually cools/dehumidifies it to a controlled condition
+      before delivering it to the building. The “space heating/cooling” is often done by a separate system
+      like VRF or fan coils.
+    </p>
+
+    <h2>Where you’ll see it</h2>
+    <ul class="bullets">
+      <li>Schools, offices, and buildings with high ventilation needs</li>
+      <li>Humid climates where moisture control matters</li>
+      <li>Projects that use VRF or fan coils for zoning</li>
+    </ul>
+  </div>
+
+  <aside class="callout">
+    <h3>Quick facts</h3>
+    <ul class="facts">
+      <li><strong>Energy moved:</strong> ventilation air</li>
+      <li><strong>Main goal:</strong> fresh air + humidity control</li>
+      <li><strong>Zoning:</strong> by separate terminal units</li>
+      <li><strong>Pairs well with:</strong> VRF / FCUs</li>
+    </ul>
+  </aside>
+</section>
+
+<section class="panel">
+  <h2>Main components</h2>
+  <div class="chips">
+    <span class="chip">Outdoor air intake</span>
+    <span class="chip">Filters</span>
+    <span class="chip">Cooling coil</span>
+    <span class="chip">Reheat (optional)</span>
+    <span class="chip">Energy recovery (optional)</span>
+    <span class="chip">Supply fan</span>
+    <span class="chip">Controls</span>
+  </div>
+  <p class="note">A DOAS may include an energy recovery wheel/core to pre-condition incoming air.</p>
+</section>
+
+<section class="panel grid-2">
+  <div>
+    <h2>How it works</h2>
+    <ol class="steps">
+      <li>Bring in 100% outdoor air (no return air mixing for many DOAS designs).</li>
+      <li>Filter and cool the air to remove moisture (dehumidify).</li>
+      <li>Optionally reheat slightly so supply air isn’t too cold.</li>
+      <li>Deliver ventilation air directly to zones (often a small duct to each zone).</li>
+      <li>Zone equipment handles the remaining heating/cooling load.</li>
+    </ol>
+  </div>
+
+  <div>
+    <h2>Pros / Cons</h2>
+    <div class="proscons">
+      <div>
+        <h3>Pros</h3>
+        <ul class="bullets">
+          <li>Strong ventilation and humidity control</li>
+          <li>Makes zoning systems more comfortable and stable</li>
+          <li>Can reduce need to “over-ventilate” through terminal units</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Cons</h3>
+        <ul class="bullets">
+          <li>Often requires another system for heating/cooling</li>
+          <li>Still needs duct distribution (smaller than full-air systems)</li>
+          <li>Control strategy needs to be thought through</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+
+    <footer class="site-footer">
+      <p><small>Created for an HTML/CSS final project • Noah Starrett</small></p>
+    </footer>
+  </div>
+</body>
+</html>

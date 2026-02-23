@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VRF System Guide</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="site-header">
+      <div>
+        <p class="kicker">HVAC System Guide</p>
+        <h1>VRF Systems</h1>
+        <p class="subtitle">Multi-zone heat pumps that distribute refrigerant to many indoor units for tight zoning control.</p>
+      </div>
+    </header>
+
+    
+    <nav class="site-nav" aria-label="Site navigation">
+      <h2 class="nav-title">Explore</h2>
+      <ul>
+        <li><a  href="index.html">Home</a></li>
+        <li><a  href="rtu.html">RTU</a></li>
+        <li><a  href="fancoil.html">Fan Coil</a></li>
+        <li><a class="active" href="vrf.html">VRF</a></li>
+        <li><a  href="doas.html">DOAS</a></li>
+      </ul>
+
+      <div class="nav-note">
+        <p><strong>Quick tip</strong></p>
+        <p>Use the “Quick facts” box to get the main idea fast.</p>
+      </div>
+    </nav>
+    
+
+    <main class="content">
+      <section class="panel">
+        <h2>System image</h2>
+        <figure class="figure">
+          <img class="hero-img" src="images/vrf_outdoor_unit.jpg" alt="Outdoor condensing/heat pump unit (representative of VRF outdoor equipment)">
+          <figcaption>Outdoor unit example (VRF outdoor units look similar to other outdoor condensing/heat pump units).</figcaption>
+        </figure>
+      </section>
+
+      
+<section class="panel grid-2">
+  <div>
+    <h2>What it is</h2>
+    <p>
+      VRF (Variable Refrigerant Flow) is a multi-zone heat pump system.
+      One (or a few) outdoor units connect to many indoor units using refrigerant piping.
+      The system can vary the refrigerant flow to match the load in each zone, which is why it can be efficient.
+    </p>
+
+    <h2>Where you’ll see it</h2>
+    <ul class="bullets">
+      <li>Offices with lots of zones and different schedules</li>
+      <li>Schools and higher education buildings</li>
+      <li>Renovations where duct space is limited</li>
+    </ul>
+  </div>
+
+  <aside class="callout">
+    <h3>Quick facts</h3>
+    <ul class="facts">
+      <li><strong>Energy moved:</strong> refrigerant (pipes)</li>
+      <li><strong>Zoning:</strong> excellent (many indoor units)</li>
+      <li><strong>Ventilation:</strong> separate (often DOAS)</li>
+      <li><strong>Options:</strong> heat pump or heat recovery</li>
+    </ul>
+  </aside>
+</section>
+
+<section class="panel">
+  <h2>Main components</h2>
+  <div class="chips">
+    <span class="chip">Outdoor unit(s)</span>
+    <span class="chip">Indoor unit(s)</span>
+    <span class="chip">Refrigerant piping</span>
+    <span class="chip">Branch boxes / headers</span>
+    <span class="chip">Controls network</span>
+    <span class="chip">Condensate drains</span>
+  </div>
+  <p class="note">Indoor unit types include ducted, cassette, wall mount, and more.</p>
+</section>
+
+<section class="panel grid-2">
+  <div>
+    <h2>How it works</h2>
+    <ol class="steps">
+      <li>Outdoor compressor adjusts speed to match total building load.</li>
+      <li>Refrigerant is sent to indoor units that are calling for heating or cooling.</li>
+      <li>Each indoor unit uses its coil as an evaporator or condenser depending on mode.</li>
+      <li>Fans in the indoor units move air across the coil to condition the room.</li>
+      <li>Controls coordinate capacity so zones stay near setpoint without constant cycling.</li>
+    </ol>
+  </div>
+
+  <div>
+    <h2>Pros / Cons</h2>
+    <div class="proscons">
+      <div>
+        <h3>Pros</h3>
+        <ul class="bullets">
+          <li>Strong zoning and comfort</li>
+          <li>Can reduce large ductwork</li>
+          <li>Heat recovery systems can move heat between zones</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Cons</h3>
+        <ul class="bullets">
+          <li>More design + controls complexity</li>
+          <li>Refrigerant safety/volume considerations</li>
+          <li>Coordination for piping routes, branch boxes, and condensate</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+
+    <footer class="site-footer">
+      <p><small>Created for an HTML/CSS final project • Noah Starrett</small></p>
+    </footer>
+  </div>
+</body>
+</html>

@@ -3,9 +3,139 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HVAC System Overview</title>
+  <title>HVAC System Guide</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  
+  <div class="wrapper">
+    <header class="site-header">
+      <div>
+        <p class="kicker">The All-Encompassing</p>
+        <h1>HVAC System Guide</h1>
+        <p class="subtitle">Four common system types explained with simple visuals, key components, and when you’d use each.</p>
+      </div>
+    </header>
+
+    <nav class="site-nav" aria-label="Site navigation">
+      <h2 class="nav-title">Explore</h2>
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="rtu.html">RTU</a></li>
+        <li><a href="fancoil.html">Fan Coil</a></li>
+        <li><a href="vrf.html">VRF</a></li>
+        <li><a href="doas.html">DOAS</a></li>
+      </ul>
+
+      <div class="nav-note">
+        <p><strong>What’s inside</strong></p>
+        <p>Each page includes: how it works, major parts, where it’s used, and pros/cons.</p>
+      </div>
+    </nav>
+
+    <main class="content">
+      <section class="panel">
+        <h2>Start here</h2>
+        <p>
+          HVAC systems all do the same big jobs: provide heating, cooling, ventilation (fresh air), and filtration.
+          The difference is <em>where</em> the air is conditioned (at the zone vs. centrally) and <em>how</em> the energy is moved
+          (ducted air vs. refrigerant piping vs. hydronic piping).
+        </p>
+
+        <div class="cards">
+          <a class="card-link" href="rtu.html">
+            <article class="card">
+              <h3>Rooftop Unit (RTU)</h3>
+              <p>A packaged unit that heats/cools air and delivers it through ductwork. Common for retail and offices.</p>
+            </article>
+          </a>
+          <a class="card-link" href="fancoil.html">
+            <article class="card">
+              <h3>Fan Coil Unit (FCU)</h3>
+              <p>A small zone unit that uses a fan + coil (water or DX refrigerant) to condition a room or small area.</p>
+            </article>
+          </a>
+          <a class="card-link" href="vrf.html">
+            <article class="card">
+              <h3>VRF</h3>
+              <p>A heat pump system that moves refrigerant to many indoor units. Great zoning and efficiency potential.</p>
+            </article>
+          </a>
+          <a class="card-link" href="doas.html">
+            <article class="card">
+              <h3>DOAS</h3>
+              <p>A dedicated outdoor air system that handles ventilation air (often humidity too). Commonly paired with VRF or fan coils.</p>
+            </article>
+          </a>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Example equipment photo</h2>
+        <p class="note">A rooftop packaged unit (RTU) — one of the most common “all-in-one” systems you’ll see in the field.</p>
+        <figure class="figure">
+          <img class="hero-img" src="images/rtu.jpg" alt="Rooftop packaged HVAC unit sitting on a roof">
+          <figcaption>Photo used for educational reference (saved in the project’s images folder).</figcaption>
+        </figure>
+      </section>
+
+      <section class="panel">
+        <h2>Quick comparison</h2>
+
+        <div class="table-wrap" role="region" aria-label="System comparison table" tabindex="0">
+          <table class="compare">
+            <caption>High-level differences (not every design case)</caption>
+            <thead>
+              <tr>
+                <th>System</th>
+                <th>Main energy moved</th>
+                <th>Typical strength</th>
+                <th>Common trade-off</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">RTU</th>
+                <td>Air (ducts)</td>
+                <td>Simple, packaged, widely used</td>
+                <td>Zoning can be limited; duct space needed</td>
+              </tr>
+              <tr>
+                <th scope="row">Fan Coil</th>
+                <td>Water (pipes) + Air (in-zone fan)</td>
+                <td>Good room-by-room control</td>
+                <td>Needs a ventilation strategy (often DOAS)</td>
+              </tr>
+              <tr>
+                <th scope="row">VRF</th>
+                <td>Refrigerant (pipes)</td>
+                <td>Excellent zoning; heat recovery options</td>
+                <td>Design/controls more complex; refrigerant safety</td>
+              </tr>
+              <tr>
+                <th scope="row">DOAS</th>
+                <td>Air (ventilation)</td>
+                <td>Ventilation + humidity control done centrally</td>
+                <td>Usually not the only heating/cooling system</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="note">
+          Tip: In real projects, systems are often combined (ex: <strong>DOAS + VRF</strong> or <strong>DOAS + fan coils</strong>)
+          so each piece does what it’s best at.
+        </p>
+      </section>
+</main>
+
+    <footer class="site-footer">
+      <p><small>Created for an HTML/CSS final project • Noah Starrett</small></p>
+    </footer>
+  </div>
 </body>
 </html>

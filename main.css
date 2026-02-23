@@ -1,0 +1,341 @@
+/* HVAC System Guide - main.css */
+/* Saw that this would help with organizing colors */
+:root{
+  --bg: #fffbeb;
+  --paper: #ffffff;
+  --ink: #213043;
+  --muted: #516173;
+  --brand: #2f4f6f;
+  --accent: rgb(69, 180, 208);
+  --border: rgba(33, 48, 67, 0.15);
+  --shadow: 0 10px 20px rgba(0,0,0,0.06);
+  --radius: 1.25rem;
+}
+
+* { box-sizing: border-box; }
+
+body{
+  background-color: var(--bg);
+  font-family: "Arimo", sans-serif;
+  color: var(--ink);
+}
+
+/* Layout */
+.wrapper{
+  width: min(1400px, 96vw);
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 270px 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.site-header{
+  grid-column: 1 / -1;
+  background: linear-gradient(135deg, #b8cfe6, #d8f3f8);
+  border: 2px solid var(--brand);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.5rem;
+  box-shadow: var(--shadow);
+}
+
+.kicker{
+  color: var(--muted);
+  letter-spacing: 0.03em;
+  margin-bottom: .3rem;
+}
+
+.site-header h1{
+  font-size: 1.8rem;
+  margin-bottom: .35rem;
+}
+
+.subtitle{
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.35;
+  max-width: 70ch;
+}
+
+/* Nav */
+.site-nav{
+  position: sticky;
+  top: 1rem;
+  align-self: start;
+  max-height: calc(100vh - 2rem);
+  overflow: auto;
+  background-color: var(--paper);
+  border: 2px solid var(--brand);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  height: fit-content;
+}
+
+.nav-title{
+  background-color: rgba(47, 79, 111, 0.08);
+  padding: 1rem 1rem .75rem 1rem;
+  font-size: 1.1rem;
+  color: var(--brand);
+}
+
+.site-nav ul{
+  list-style-type: none;
+}
+
+.site-nav a{
+  display: block;
+  padding: .85rem 1rem;
+  text-decoration: none;
+  color: var(--ink);
+  border-top: 1px solid var(--border);
+}
+
+.site-nav a:hover{
+  background-color: rgba(69, 180, 208, 0.12);
+}
+
+.site-nav a.active{
+  background-color: rgba(69, 180, 208, 0.18);
+  border-left: 6px solid var(--accent);
+  padding-left: calc(1rem - 6px);
+  font-weight: 700;
+}
+
+.nav-note{
+  border-top: 1px solid var(--border);
+  padding: 1rem;
+  color: var(--muted);
+}
+
+.nav-note strong{ color: var(--ink); }
+
+/* Content */
+.content{
+  background-color: transparent;
+  display: grid;
+  gap: 1rem;
+}
+
+.panel{
+  background-color: var(--paper);
+  border: 2px solid var(--brand);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.5rem;
+  box-shadow: var(--shadow);
+}
+
+.panel h2{
+  font-size: 1.4rem;
+  color: var(--brand);
+  margin-bottom: .6rem;
+}
+
+.panel p{
+  line-height: 1.55;
+  margin-bottom: 1rem;
+}
+
+.note{
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+/* Cards (home page) */
+.cards{
+  margin-top: .75rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.card{
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.card h3{
+  font-size: 1.15rem;
+  margin-bottom: .4rem;
+}
+
+.card p{
+  color: var(--muted);
+}
+
+.button{
+  display: inline-block;
+  margin-top: .4rem;
+  padding: .65rem .9rem;
+  border-radius: 999px;
+  border: 1px solid rgba(47, 79, 111, 0.35);
+  text-decoration: none;
+  color: var(--ink);
+  background-color: rgba(47, 79, 111, 0.06);
+}
+
+.button:hover{
+  background-color: rgba(69, 180, 208, 0.18);
+}
+
+/* Two-column content sections */
+.grid-2{
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+.callout{
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: rgba(216, 243, 248, 0.35);
+}
+
+.callout h3{
+  margin-bottom: .6rem;
+  color: var(--brand);
+}
+
+.facts{
+  list-style-type: none;
+  display: grid;
+  gap: .5rem;
+}
+
+.facts strong{
+  color: var(--ink);
+}
+
+/* Lists */
+.bullets{
+  margin-left: 1.1rem;
+  line-height: 1.5;
+}
+
+.steps{
+  margin-left: 1.2rem;
+  line-height: 1.6;
+}
+
+.steps li{
+  margin-bottom: .5rem;
+}
+
+/* Chips */
+.chips{
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin-bottom: .8rem;
+}
+
+.chip{
+  border: 1px solid var(--border);
+  background-color: rgba(47, 79, 111, 0.06);
+  padding: .4rem .6rem;
+  border-radius: 999px;
+  font-size: .95rem;
+}
+
+/* Pros/Cons */
+.proscons{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.proscons h3{
+  color: var(--brand);
+  margin-bottom: .4rem;
+}
+
+/* Tables */
+.table-wrap{
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+}
+
+.compare{
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 900px;
+}
+
+.compare caption{
+  text-align: left;
+  padding: .9rem 1rem;
+  color: var(--muted);
+}
+
+.compare th, .compare td{
+  padding: .85rem 1rem;
+  border-top: 1px solid var(--border);
+  vertical-align: top;
+}
+
+.compare thead th{
+  background-color: rgba(47, 79, 111, 0.06);
+  border-top: none;
+}
+
+
+/* Footer */
+.site-footer{
+  grid-column: 1 / -1;
+  background-color: #c0cac9;
+  border: 2px solid var(--brand);
+  border-radius: var(--radius);
+  padding: .9rem 1rem;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+
+/* Responsive */
+@media (max-width: 56rem){
+  .wrapper{
+    grid-template-columns: 1fr;
+  }
+  .site-nav{
+    position: relative;
+  }
+  .cards{
+    grid-template-columns: 1fr;
+  }
+  .grid-2{
+    grid-template-columns: 1fr;
+  }
+  .proscons{
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Clickable card links */
+.card-link{
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+.card-link:hover .card{
+  background-color: rgba(69, 180, 208, 0.08);
+}
+
+/* Images */
+.hero-img{
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 1rem;
+  border: 1px solid var(--border);
+}
+.figure{
+  margin-top: .5rem;
+}
+.figure figcaption{
+  color: var(--muted);
+  margin-top: .5rem;
+}
